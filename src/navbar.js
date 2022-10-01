@@ -1,5 +1,5 @@
 import logo from "./THABYS.png";
-import "./App.css";
+import "./assets/App.css";
 
 export default function Navbar() {
   return (
