@@ -1,15 +1,18 @@
-import logo from "./THABYS.png";
-import "./assets/App.css";
+import logo from "./assets/img/logo.svg";
+import "./assets/css/App.css";
 
 export default function Navbar() {
   return (
-    <nav className="nav-1">
-      <img src={logo} height="30px" />
-      <div className="menu">
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Masuk</a>
-      </div>
-    </nav>
+    <div className="nav">
+      <nav className="nav-1">
+        <img src={logo} height="50px" />
+        <div className="menu">
+          <a href="#">galleries</a>
+          <a href="#">bio</a>
+          <a href="#">skills</a>
+          <a href="#">contact</a>
+        </div>
+      </nav>
+    </div>
   );
 }

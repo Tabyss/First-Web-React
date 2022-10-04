@@ -1,0 +1,38 @@
+/* navbar */
+.nav {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--body);
+}
+
+.nav-1 {
+  max-width: 1280px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.nav-1 img path{
+  fill: var(--primary);
+}
+
+.menu a{
+  font-size: 1rem;
+  padding: 0px 2vw; 
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.menu a:hover{
+  color: var(--secondary);
+}
+
+/* .menu {
+  display: none;
+} */

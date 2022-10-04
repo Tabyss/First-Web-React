@@ -1,0 +1,29 @@
+.main {
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--body);
+
+}
+
+.main span{
+
+}
+
+.main h1{
+    display: block;
+    margin-left: -5%;
+    margin-bottom: -70px;
+    opacity: 0.3;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10rem;
+    color: var(--body);
+    -webkit-text-stroke: 1px var(--primary);
+}
+
+.main h2{
+    text-transform: uppercase;
+    margin-left: 5%;
+    font-weight: 400;
+    font-size: 6rem;
+    color: var(--primary);
+}

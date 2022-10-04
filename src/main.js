@@ -1,9 +1,11 @@
-import "./assets/App.css";
+import "./assets/css/style.css";
 
 function App() {
   return (
-    <div className="App">
-        <h1>Main Page</h1>
+    <div className="main">
+      <span></span>
+      <h1>shabbah</h1>
+      <h2>athabiyyu</h2>
     </div>
   );
 }
