@@ -4,8 +4,9 @@ function App() {
   return (
     <div className="main">
       <span></span>
-      <h1>shabbah</h1>
-      <h2>athabiyyu</h2>
+      <h1 className="first">shabbah</h1>
+      <h2 className="last">athabiyyu</h2>
+      <button className="contact">contact me</button>
     </div>
   );
 }

@@ -1,17 +1,25 @@
 .main {
+    display: block;
+    position: relative;
     font-family: 'Oswald', sans-serif;
     background-color: var(--body);
-
+    z-index: 1;
+    padding: 4rem 0px;
 }
 
 .main span{
-
+    display: block;
+    height: 1px;
+    width: 20%;
+    background-color: var(--primary);
 }
 
-.main h1{
+
+
+.first {
     display: block;
-    margin-left: -5%;
-    margin-bottom: -70px;
+    margin-bottom: -4rem;
+    margin-left: -30px;
     opacity: 0.3;
     text-transform: uppercase;
     font-weight: 700;
@@ -20,10 +28,22 @@
     -webkit-text-stroke: 1px var(--primary);
 }
 
-.main h2{
+.last {
     text-transform: uppercase;
     margin-left: 5%;
     font-weight: 400;
     font-size: 6rem;
     color: var(--primary);
+}
+
+.contact {
+    position: relative;
+    margin-right: 50px;
+    padding: 15px 35px;
+    background-color: var(--primary);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: uppercase;
+
 }
