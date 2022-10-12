@@ -11,6 +11,6 @@ root.render(
   <React.StrictMode>
     <Navbar />
     <Main />
-    {/* <About /> */}
+    <About />
   </React.StrictMode>
 );

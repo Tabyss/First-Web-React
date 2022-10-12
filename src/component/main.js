@@ -13,6 +13,7 @@ function App() {
         <button className="contact"><a href="/">Contact Me</a></button>
         <span className="cont-1"></span>
         <span className="cont-2"></span>
+        <span className="cont-3"></span>
       </div>
     </div>
   );

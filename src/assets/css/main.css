@@ -48,7 +48,7 @@
 .contact {
     position: absolute;
     right: 5%;
-    margin: 120px 20px;
+    margin: -153px 20px;
     padding: 13px 31px;
     border: none;
     background-image: url(../img/btn-blk.svg);
@@ -68,7 +68,7 @@
 .cont-1{
     position: absolute;
     right: 0;
-    margin: -10px 5%;
+    margin: -310px 5%;
     height: 300px;
     width: 1px;
     background-color: var(--primary);
@@ -77,10 +77,16 @@
 .cont-2{
     position: absolute;
     right: 0;
-    margin: 187px 5%;
+    margin: -87px 5%;
     width: 520px;
     height: 1px;
     background-color: var(--primary);
+}
+
+.cont-3{
+    position: relative;
+    display: block;
+    margin: 250px;
 }
 
 @media (max-width: 768px){

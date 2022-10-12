@@ -1,15 +1,23 @@
 .about{
-    display: block;
+    display:flex;
     position: relative;
-    margin: 0 5%;
+    margin: 0;
+    padding: 0;
 }
 
 .about h1{
-    position: absolute;
     font-family: var(--font-1);
     font-size: 4rem;
     font-weight: 400;
     line-height: 62px;
-    transform-origin: 0;
+    transform-origin: 20% 10%;
     transform: rotate(90deg);
+}
+
+.about img{
+    width: 518px;
+}
+
+.about-data{
+    
 }
