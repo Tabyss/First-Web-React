@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   background-color: var(--body);
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .nav-1 {
@@ -20,8 +21,12 @@
   fill: var(--primary);
 }
 
+.menu{
+  margin-right: 20px;
+}
+
 .menu a {
-  font-size: 1rem;
+  font-size: 0.75rem;
   padding: 0px 2vw;
   text-decoration: none;
   text-transform: uppercase;

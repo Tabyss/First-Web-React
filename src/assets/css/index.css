@@ -1,12 +1,23 @@
+@font-face {
+  font-family: nofex;
+  src: url(../font/Nofex.otf);
+}
+
 :root{
-  --body : #131516;
-  --primary : #A0F302;
-  --secondary : #fff;
+  --font-1: nofex;
+  --body : #fff;
+  --primary : #000;
 }
 
 * {
-  font-family: 'IBM Plex Sans', sans-serif;
-  margin: 0 ;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
+  behavior: smooth;
+
+}
+
+::-webkit-scrollbar{
+  overflow: hidden;
+  overflow-y: scroll;
 }
