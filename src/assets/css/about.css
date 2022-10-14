@@ -1,16 +1,17 @@
 .about{
     display:flex;
     position: relative;
-    margin: 0;
+    margin: calc(5% + 200px) 5%;
     padding: 0;
 }
 
-.about h1{
+.about-value{
+    margin: 130px -80px;
     font-family: var(--font-1);
     font-size: 4rem;
     font-weight: 400;
     line-height: 62px;
-    transform-origin: 20% 10%;
+    transform-origin: top;
     transform: rotate(90deg);
 }
 
@@ -19,5 +20,25 @@
 }
 
 .about-data{
-    
+    margin: 0px 120px
+}
+
+@media screen and (max-width: 768px){
+    .about{
+        margin: calc(5% ) 5%;
+    }
+
+    .about-value{
+        margin: 130px -100px;
+        font-size: 4rem;
+
+    }
+
+    .about img{
+        width: 256px;
+    }
+
+    .about-data{
+        
+    }
 }

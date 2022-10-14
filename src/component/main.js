@@ -10,9 +10,11 @@ function App() {
         <h2 className="last">athabiyyu</h2>
       </div>
       <div className="btn-contact">
-        <button className="contact"><a href="/">Contact Me</a></button>
         <span className="cont-1"></span>
-        <span className="cont-2"></span>
+        <div className="btn-main">
+          <button className="contact"><a href="/">Contact Me</a></button>
+          <span className="cont-2"></span>
+        </div>
         <span className="cont-3"></span>
       </div>
     </div>

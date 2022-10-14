@@ -19,12 +19,11 @@ export default function Navbar() {
           <a href="#">skills</a>
           <a href="#">contact</a>
         </div>
-        <div className="btn" onClick={active}>
-        <button className={click ? "burger active" : "burger"}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <div className="burger-1" onClick={active}>
+          <button className={click ? "burger active" : "burger"}>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </nav>
     </div>
