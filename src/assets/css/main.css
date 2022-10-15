@@ -13,7 +13,7 @@
 
 .main span {
     display: block;
-    margin: 1.5% 0px;
+    margin: 8% 0px 1.5%;
     height: 1px;
     width: 20%;
     background-color: var(--primary);
