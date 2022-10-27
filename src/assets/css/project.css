@@ -1,0 +1,16 @@
+.prj{
+    display:flex;
+    flex-direction: row;
+    gap: 10%;
+    margin: 5%;
+}
+
+.prj__title{
+    font-family: var(--font-1);
+    font-size: 2rem;
+
+}
+
+#porto{
+    width: 410px;
+}
