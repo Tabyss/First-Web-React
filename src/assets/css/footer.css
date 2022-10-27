@@ -1,0 +1,15 @@
+.foot{
+    display: block;
+    position:absolute;
+    bottom: 0;
+}
+
+.foot__copy{
+    background-color: var(--primary);
+    color: #fff;
+
+}
+
+#Layer_2-2{
+    fill: #fff;
+}
