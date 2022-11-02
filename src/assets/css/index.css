@@ -5,6 +5,7 @@
 
 :root{
   --font-1: nofex;
+  --font-2: 'IBM Plex Sans', sans-serif;
   --body : #fff;
   --primary : #000;
 }
