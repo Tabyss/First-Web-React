@@ -1,16 +1,41 @@
 .prj{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10%;
     margin: 5%;
+    font-family: var(--font-2);
+    
 }
 
 .prj__title{
+    display: flex;
+    right: 0;
+    margin: 0 0 10%;
+    justify-content: end;
     font-family: var(--font-1);
     font-size: 2rem;
-
 }
 
-#porto{
+.prj__slide{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 60px;
+    
+}
+
+.porto1{
+    height: 100%;
+    width: 260px;
+}
+
+.porto2{
+    height: 100%;
     width: 410px;
+}
+
+.prj__load{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

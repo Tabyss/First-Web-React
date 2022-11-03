@@ -1,7 +1,6 @@
-import "../assets/css/project.css";
 import porto from "../assets/img/porto/secta.png";
-// import * as porto1 from "../assets/img/porto/index";
-import React from 'react';
+import "../assets/css/project.css";
+import React from "react";
 
 // let auto = document.getElementById('porto');
 // let image = Array(porto1);
@@ -14,19 +13,23 @@ import React from 'react';
 function Project() {
   return (
     <div className="prj">
-        <div className="prj__title">
-            <h2>Project</h2>
-        </div>
-        <div className="prj__Slide">
-          <div>
-          <button>
-            
-          </button>
+      <div className="prj__title">
+        <h2>Project</h2>
+      </div>
+      <div className="prj__slide">
+        <div>
+          <img className="porto1" src={porto} />
+          <div className="prj__load">
+            <p>All on progress...</p>
+            <div>
+              <></>
+            </div>
           </div>
-          <img id="porto" src={ porto }/>
         </div>
+        <img className="porto2" src={porto} />
+      </div>
     </div>
-  )
+  );
 }
 
-export default Project
+export default Project;

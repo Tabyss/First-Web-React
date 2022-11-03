@@ -1,4 +1,5 @@
 import "../assets/css/main.css";
+import { ReactComponent as Barcode} from '../assets/img/barcode.svg';
 import { Link } from "react";
 
 function App() {
@@ -19,10 +20,8 @@ function App() {
         <span className="btn__line2"></span>
         <span className="line-4"></span>
       </div>
-      <div className="loop">
-        <span >
-
-        </span>
+      <div className="barcode">
+        <Barcode width="600px" height="15px"/>
       </div>
     </div>
   );
