@@ -4,7 +4,7 @@
     justify-content: space-between;
     position:relative;
     bottom: 0;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: var(--font-2)
 }
 
 .foot__copy{

@@ -1,33 +1,49 @@
-import porto from "../assets/img/porto/secta.png";
 import "../assets/css/project.css";
-import React from "react";
+import React, { useRef, useState } from "react";
+import { BiLeftArrow } from "react-icons/bi";
+import { RiArrowRightSFill } from "react-icons/ri";
 
-// let auto = document.getElementById('porto');
-// let image = Array(porto1);
+function Project({ slides }) {
+  const [current, setcurrent] = useState(0);
+  const length = slides.length;
+  // const timeout = useRef(null);
 
-// setInterval(function(){
-//   let qeue = Math.floor(Math.random()* 3);
-//   auto.src = image[qeue];
-// }, 1000);
+  const next = () => {
+    setcurrent(current === length - 1 ? 0 : current + 1);
+  };
 
-function Project() {
+  const prev = () => {
+    setcurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  const projectList = (
+    <div className="prj__slide">
+      <div className="prj__load">
+        <p>All on progress...</p>
+        <BiLeftArrow onClick={prev} />
+        <RiArrowRightSFill onClick={next} />
+      </div>
+      {slides.map((slide, slides) => {
+        return (
+          <div className="prj__slide" key={slides}>
+            {slides === current && (
+              <div>
+                <h1>{slide.title}</h1>
+                <img className="porto2" src={slide.image} alt={slide.alt} />
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+
   return (
     <div className="prj">
       <div className="prj__title">
         <h2>Project</h2>
       </div>
-      <div className="prj__slide">
-        <div>
-          <img className="porto1" src={porto} />
-          <div className="prj__load">
-            <p>All on progress...</p>
-            <div>
-              <></>
-            </div>
-          </div>
-        </div>
-        <img className="porto2" src={porto} />
-      </div>
+      {projectList}
     </div>
   );
 }

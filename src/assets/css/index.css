@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 @font-face {
   font-family: nofex;
   src: url(../font/Nofex.otf);
@@ -5,7 +7,7 @@
 
 :root{
   --font-1: nofex;
-  --font-2: 'IBM Plex Sans', sans-serif;
+  --font-2: 'Roboto', sans-serif;
   --body : #fff;
   --primary : #000;
 }

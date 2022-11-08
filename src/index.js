@@ -5,6 +5,7 @@ import Main from './component/main';
 import './assets/css/index.css';
 import Project from './component/project';
 import Footer from './component/footer';
+import { slide } from '../src/assets/img/porto/index'
 
 
 
@@ -13,7 +14,7 @@ root.render(
   <React.StrictMode>
     <Navbar />
     <Main />
-    <Project/>
+    <Project slides={slide}/>
     <Footer/>
   </React.StrictMode>
 );
