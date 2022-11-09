@@ -8,13 +8,16 @@ function Project({ slides }) {
   const length = slides.length;
   // const timeout = useRef(null);
 
-  const next = () => {
+  
+  const next = (next) => {
     setcurrent(current === length - 1 ? 0 : current + 1);
   };
-
+  
   const prev = () => {
     setcurrent(current === 0 ? length - 1 : current - 1);
   };
+  
+  // setInterval(next, 8000);
 
   const projectList = (
     <div className="prj__slide">
