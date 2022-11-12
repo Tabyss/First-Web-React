@@ -8,27 +8,41 @@ function Project({ slides }) {
   const length = slides.length;
   // const timeout = useRef(null);
 
-  
   const next = (next) => {
     setcurrent(current === length - 1 ? 0 : current + 1);
   };
-  
+
   const prev = () => {
     setcurrent(current === 0 ? length - 1 : current - 1);
   };
-  
+
   // setInterval(next, 8000);
 
+  const skillList = (
+    <div className="sk">
+      <div className="sk__item">
+        <div>
+          <span className="sk__list1">frontend development</span>
+        </div>
+        <div className="sk__list1">
+          <span>designer graphic</span>
+        </div>
+        <h5>and still counting...</h5>
+      </div>
+      <div></div>
+    </div>
+  );
+
   const projectList = (
-    <div className="prj__slide">
-      <div className="prj__load">
+    <div className="pl__slide">
+      <div className="pl__load">
         <p>All on progress...</p>
         <BiLeftArrow onClick={prev} />
         <RiArrowRightSFill onClick={next} />
       </div>
       {slides.map((slide, slides) => {
         return (
-          <div className="prj__slide" key={slides}>
+          <div className="pl__slide" key={slides}>
             {slides === current && (
               <div>
                 <h1>{slide.title}</h1>
@@ -43,6 +57,11 @@ function Project({ slides }) {
 
   return (
     <div className="prj">
+      <div className="prj__main">
+        <span className="prj__line"></span>
+        {skillList}
+        <span className="shape"></span>
+      </div>
       <div className="prj__title">
         <h2>Project</h2>
       </div>

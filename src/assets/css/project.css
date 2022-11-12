@@ -1,14 +1,94 @@
-.prj{
-    display:flex;
+.sk {
+    display: flex;
+    position: relative;
     flex-direction: column;
-    gap: 10%;
-    margin: 5%;
-    height: 200vh;
-    font-family: var(--font-2);
-    
+    padding: 0 50px;
 }
 
-.prj__title{
+.sk__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50% 0 ;
+}
+
+.sk__list1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    height: 40px;
+    margin: 0;
+
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    background-color: var(--primary);
+    color: var(--body);
+}
+
+.sk__list1:before {
+    content: "";
+    align-self: flex-start;
+    top: 0;
+    height: 6px;
+    width: 6px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    transform: scale(0);
+}
+
+.sk__list1:after {
+    content: "";
+    bottom: 0;
+    align-self: flex-end;
+    height: 6px;
+    width: 6px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    transform: scale(0);
+}
+
+.sk__list1:hover{
+    background-color: #d3d3d3;
+    opacity: 30;
+    color: var(--primary);
+}
+
+.sk__list1:hover:before,
+.sk__list1:hover:after{
+    transform: scale(2);
+}
+
+.sk__item h5{
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px){
+    .sk__list1{
+        width: 100%;
+    }
+}
+
+.prj {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    height: 200vh;
+    font-family: var(--font-2);
+    background-color: var(--body);
+}
+
+.prj__main{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.prj__title {
     display: flex;
     right: 0;
     margin: 0 0 10%;
@@ -17,26 +97,49 @@
     font-size: 2rem;
 }
 
-.prj__slide{
+.pl__slide {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 60px;
-    
+
 }
 
-.porto1{
+.porto1 {
     height: 100%;
     width: 260px;
 }
 
-.porto2{
+.porto2 {
     position: absolute;
     width: 410px;
 }
 
-.prj__load{
+.shape{
+    margin: 10%;
+    width: 400px;
+    height: 400px;
+    background-color: #d3d3d3;
+}
+
+.prj__line{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    position: relative;
+    top: -50%;
+    height: 100%;
+    width: 1px;
+    mix-blend-mode: difference;
+    background-color: var(--body);
+    transform-origin: bottom;
+    animation: line-up .5s linear 1 normal none;
+}
+
+@keyframes line-up {
+    0% {
+        transform: scaleY(0);
+        
+    }
+    100% {
+        transform: scaleY(100%);
+    }
 }

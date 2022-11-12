@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <div className="nav">
       <nav className="nav__body">
-        <Logo height="35px" />
+        <Logo height="35px" fill="white"/>
         <div className="nav__menu">
           <div className="burger" onClick={active}>
             <button className={click ? "burger active" : "burger"}>
