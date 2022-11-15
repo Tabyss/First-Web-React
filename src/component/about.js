@@ -1,5 +1,4 @@
 import "../assets/css/about.css";
-import profile from "../assets/img/profile.png";
 import play from "../assets/img/play.svg";
 
 function About() {

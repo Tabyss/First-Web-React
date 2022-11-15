@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { ReactComponent as Logo } from '../assets/img/logo.svg';
+import { ReactComponent as Logo } from "../assets/img/logo.svg";
+import { NavLink } from "react-router-dom";
 import "../assets/css/navbar.css";
 
 export default function Navbar() {
@@ -10,7 +11,9 @@ export default function Navbar() {
   return (
     <div className="nav">
       <nav className="nav__body">
-        <Logo height="35px" fill="white"/>
+        <NavLink to="/">
+          <Logo height="35px" fill="white" />
+        </NavLink>
         <div className="nav__menu">
           <div className="burger" onClick={active}>
             <button className={click ? "burger active" : "burger"}>
@@ -18,10 +21,9 @@ export default function Navbar() {
               <span></span>
             </button>
           </div>
-          <a href="#">galleries</a>
-          <a href="#">bio</a>
-          <a href="#">skills</a>
-          <a href="#">contact</a>
+          <NavLink to="/about">bio</NavLink>
+          <NavLink to="#">skills</NavLink>
+          <NavLink to="#">contact</NavLink>
         </div>
       </nav>
     </div>

@@ -1,10 +1,13 @@
+import React from 'react';
 import { ReactComponent as Barcode } from "../assets/img/barcode.svg";
 import { ReactComponent as Plus } from "../assets/img/plus.svg";
-import { Link } from "react";
 import "../assets/css/main.css";
+import Project from "./project";
+import { slide } from '../assets/img/porto/index'
 
-function App() {
+function Main() {
   return (
+    <>
     <div className="main">
       <Barcode className="barcode" fill="white" />
       <div className="main__body">
@@ -19,11 +22,12 @@ function App() {
             <a href="/">Contact Me</a>
           </button>
         </div>
-
       </div>
       <Plus className="plus" />
     </div>
+    <Project slides={slide}/>
+    </>
   );
 }
 
-export default App;
+export default Main;
