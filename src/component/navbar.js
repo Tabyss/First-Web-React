@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 import "../assets/css/navbar.css";
 
 export default function Navbar() {
-  const [click, setclick] = useState(false);
+  const [click, setClick] = useState(false);
 
-  const active = () => setclick(!click);
+  const active = () => setClick(!click);
 
   return (
     <div className="nav">
@@ -22,7 +22,7 @@ export default function Navbar() {
             </button>
           </div>
           <NavLink to="/about">bio</NavLink>
-          <NavLink to="#">skills</NavLink>
+          <NavLink to="/skill">skills</NavLink>
           <NavLink to="#">contact</NavLink>
         </div>
       </nav>

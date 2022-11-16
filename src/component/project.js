@@ -4,16 +4,16 @@ import { BiLeftArrow } from "react-icons/bi";
 import { RiArrowRightSFill } from "react-icons/ri";
 
 function Project({ slides }) {
-  const [current, setcurrent] = useState(0);
+  const [current, setCurrent] = useState(0);
   const length = slides.length;
   // const timeout = useRef(null);
 
   const next = (next) => {
-    setcurrent(current === length - 1 ? 0 : current + 1);
+    setCurrent(current === length - 1 ? 0 : current + 1);
   };
 
   const prev = () => {
-    setcurrent(current === 0 ? length - 1 : current - 1);
+    setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
   // setInterval(next, 8000);
@@ -29,7 +29,6 @@ function Project({ slides }) {
         </div>
         <h5>and still counting...</h5>
       </div>
-      <div></div>
     </div>
   );
 
