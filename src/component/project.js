@@ -21,11 +21,11 @@ function Project({ slides }) {
   const skillList = (
     <div className="sk">
       <div className="sk__item">
-        <div>
-          <span className="sk__list1">frontend development</span>
+        <div className="sk__list1">
+          <span >frontend development</span>
         </div>
         <div className="sk__list1">
-          <span>designer graphic</span>
+          <span >designer graphic</span>
         </div>
         <h5>and still counting...</h5>
       </div>
@@ -57,9 +57,7 @@ function Project({ slides }) {
   return (
     <div className="prj">
       <div className="prj__main">
-        <span className="prj__line"></span>
         {skillList}
-        <span className="shape"></span>
       </div>
       <div className="prj__title">
         <h2>Project</h2>
