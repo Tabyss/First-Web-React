@@ -1,8 +1,9 @@
 .about {
     display: flex;
     position: relative;
-    margin: 20% 0 0 5%;
+    padding: 20% 0 0 5%;
     padding: 0;
+    background-color: var(--body);
 }
 
 .about-value {

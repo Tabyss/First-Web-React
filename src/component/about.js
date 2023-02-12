@@ -1,22 +1,22 @@
-import "../assets/css/about.css";
-import play from "../assets/img/play.svg";
+import "../assets/css/about.scss";
+import { ReactComponent as Barcode } from "../assets/img/barcode1.svg";
+import Skill from "./Skill";
+import Track from "./Track";
 
 function About() {
   return (
     <div className="about">
-      <h1 className="about-value">about</h1>
+      <div className="about_name">
+        <h1>Hi, I am</h1>
+        {/* <Barcode className="barcode"/> */}
+        <h2>Shabbah</h2>
+        <p>Athabiyyu</p>
+      </div>
       <div className="about-1">
-        {/* <img src={profile}  className="profile"/> */}
-        <div className="about-2">
-          <p className="desc">about aku .....</p>
-          <div className="about-3">
-            <img src={play} className="icon-about" />
-            <div className="about-4">
-              <h4 className="pos-1">graphic designer</h4>
-              <h4 className="pos-2">frontend development</h4>
-            </div>
-          </div>
-        </div>
+        <Skill />
+      </div>
+      <div>
+        <Track />
       </div>
     </div>
   );

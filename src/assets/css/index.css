@@ -10,6 +10,7 @@
   --font-2: 'Roboto', sans-serif;
   --body : #fff;
   --primary : #000;
+  --secondary : #d9d9d9;
 }
 
 * {
@@ -20,6 +21,7 @@
 }
 
 ::-webkit-scrollbar{
+  display: none;
   overflow: hidden;
   overflow-y: scroll;
 }

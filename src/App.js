@@ -1,15 +1,15 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Navbar from "./component/navbar";
-import Main from "./component/main";
-import About from "./component/about";
-import Skill from "./component/skill";
+import Navbar from "./component/Navbar";
+import Main from "./component/Main";
+import About from "./component/About";
+import Skill from "./component/Skill";
 
 function App() {
   return (
     <>
-      <Link />
       <Navbar />
+      <Link />
     </>
   );
 }
@@ -20,6 +20,7 @@ function Link() {
       <Route path="/" element={<Main />}></Route>
       <Route path="about" element={<About />}></Route>
       <Route path="skill" element={<Skill />}></Route>
+      
     </Routes>
   );
 }
